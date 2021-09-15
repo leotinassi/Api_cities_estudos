@@ -20,14 +20,6 @@
 docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
 ```
 
-* [Postgres Earth distance](https://www.postgresql.org/docs/current/earthdistance.html)
-* [earthdistance--1.0--1.1.sql](https://github.com/postgres/postgres/blob/master/contrib/earthdistance/earthdistance--1.0--1.1.sql)
-* [OPERATOR <@>](https://github.com/postgres/postgres/blob/master/contrib/earthdistance/earthdistance--1.1.sql)
-* [postgrescheatsheet](https://postgrescheatsheet.com/#/tables)
-* [datatype-geometric](https://www.postgresql.org/docs/current/datatype-geometric.html)
-
-### 
-
 ```shell script
 
 ```
@@ -77,7 +69,8 @@ select earth_distance(
 * [DevCenter](https://devcenter.heroku.com/articles/getting-started-with-gradle-on-heroku)
 
 ```shell script
-
+Create a heroko account to deploy and then host on the clouds
+https://id.heroku.com/login
 ```
 
 ## Code Quality
@@ -110,6 +103,9 @@ wget https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/res
 ## CI
 
 ### Travis
+
+Data to use in the bank:
+
 + https://github.com/travis-ci/travis.rb#readme
 
 + https://docs.travis-ci.com/user/tutorial/
