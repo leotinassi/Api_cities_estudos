@@ -2,9 +2,9 @@
 
 ## Requirements
 
-* Linux
+* Windows
 * Git
-* Java 8
+* Java 11
 * Docker
 * IntelliJ Community
 * Heroku CLI
@@ -12,12 +12,12 @@
 
 ## DataBase
 
-### Postgres
+### Mysql
 
-* [Postgres Docker Hub](https://hub.docker.com/_/postgres)
+* [Mysql Docker Hub](https://hub.docker.com/_/mysql)
 
 ```shell script
-docker run --name cities-db -d -p 5432:5432 -e POSTGRES_USER=postgres_user_city -e POSTGRES_PASSWORD=super_password -e POSTGRES_DB=cities postgres
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
 ```
 
 * [Postgres Earth distance](https://www.postgresql.org/docs/current/earthdistance.html)
@@ -26,12 +26,10 @@ docker run --name cities-db -d -p 5432:5432 -e POSTGRES_USER=postgres_user_city 
 * [postgrescheatsheet](https://postgrescheatsheet.com/#/tables)
 * [datatype-geometric](https://www.postgresql.org/docs/current/datatype-geometric.html)
 
-### Access
+### 
 
 ```shell script
-docker exec -it cities-db /bin/bash
 
-psql -U postgres_user_city cities
 ```
 
 ### Query Earth Distance
@@ -53,12 +51,12 @@ select earth_distance(
 
 * [https://start.spring.io/](https://start.spring.io/)
 
-+ Java 8
-+ Gradle Project
++ Java 11
++ Maven Project
 + Jar
 + Spring Web
 + Spring Data JPA
-+ PostgreSQL Driver
++ Mysql Driver
 
 ### Spring Data
 
@@ -79,7 +77,7 @@ select earth_distance(
 * [DevCenter](https://devcenter.heroku.com/articles/getting-started-with-gradle-on-heroku)
 
 ```shell script
-heroku create dio-cities-api --addons=heroku-postgresql
+
 ```
 
 ## Code Quality
